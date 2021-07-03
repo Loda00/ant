@@ -1,30 +1,31 @@
-import { useState } from 'react'
-import { Input, Radio, Checkbox, DatePicker, Select, Form } from 'antd';
+import React from 'react'
+// Radio, Checkbox, DatePicker, Select, 
+import { Input, Form } from 'antd';
 import './App.css';
 
-const options = ['Hangzhou', 'Ningbo', 'Wenzhou']
+// const options = ['Hangzhou', 'Ningbo', 'Wenzhou']
 
-const { RangePicker } = DatePicker
+// const { RangePicker } = DatePicker
 function App() {
-  const [nombre, setNombre] = useState('')
-  const [apellido, setApellido] = useState('')
-  const [genero, setGenero] = useState('M')
-  const [invalido, setInvalido] = useState(false)
-  const [cumple, setCumple] = useState('')
-  const [dateStart, setDateStart] = useState('')
-  const [dateEnd, setDateEnd] = useState('')
-  const [select, setSelect] = useState('')
+  // const [nombre, setNombre] = useState('')
+  // const [apellido, setApellido] = useState('')
+  // const [genero, setGenero] = useState('M')
+  // const [invalido, setInvalido] = useState(false)
+  // const [cumple, setCumple] = useState('')
+  // const [dateStart, setDateStart] = useState('')
+  // const [dateEnd, setDateEnd] = useState('')
+  // const [select, setSelect] = useState('')
 
   const [form] = Form.useForm();
 
-  const handleChange = (e, cb) => {
-    console.log('e', e.target.value)
-    cb(e.target.value)
-  }
+  // const handleChange = (e, cb) => {
+  //   console.log('e', e.target.value)
+  //   cb(e.target.value)
+  // }
 
-  function onChange(date, dateString) {
-    setCumple(dateString)
-  }
+  // function onChange(date, dateString) {
+  //   setCumple(dateString)
+  // }
 
   const onFinish = values => {
     console.log('Received values of form: ', values);
